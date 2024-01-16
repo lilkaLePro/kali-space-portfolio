@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${inter.className} w-full flex gap-5 flex-col md:flex-row justify-center `} >
-      <header className='md:mt-10'>
+     <header className='md:mt-14'>
         <Header />
       </header>
-       <section className='w-full md:mt-10  px-2 md:max-w-3xl '>
+       <section className='w-full  h-screen overflow-auto md:mt-10  px-2 md:max-w-3xl '>
        {children}
 
        <p>suivez moi sur X</p>
@@ -32,4 +32,5 @@ export default function RootLayout({
     </html>
 
   )
+
 }
