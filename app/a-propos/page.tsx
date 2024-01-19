@@ -1,4 +1,4 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import ProjetsCard from "@/components/ui/projectCard"
 import { BookOpenCheckIcon, 
     Code2, Palette 
 } from "lucide-react"
@@ -25,11 +25,11 @@ const skillsCardData = [
 export default function Aporpos(){
 
     return <div className="md:mt-20 mt-10">
-        <div >
+        <div className="text-md font-semibold">
             En tant qu un develeppeur junior web, j ai des sklls très pointue en Front-End Web.
             j ai été contrain d utiliser le backend 
         </div>
-        <p className="text-center font-bold text-lg my-3">Mes competences</p>
+        <p className="text-center text-secondary font-bold text-lg my-3">Mes competences</p>
         <div className="w-full grid gap-7 md:grid-cols-3 grid-cols-1 text-center">
             
             { skillsCardData.map(card => (
@@ -38,11 +38,11 @@ export default function Aporpos(){
 
                     <div className="w-10 h-10 border text-secondary">{card.icone} </div>
                    
-                    <p className="text-lg font-semibold" >{card.title} </p>
+                        <p className="text-lg font-semibold" >{card.title} </p>
 
                     <div className="">
                     {card.skills.map(skill => (
-                        <p className=" text-lg "
+                        <p className=" text-lg font-medium"
                         key={skill[0]}> {skill}</p>
                     )) }
                     </div>
@@ -52,13 +52,9 @@ export default function Aporpos(){
            
         </div>
         <div> 
-        <h1 className="my-9 text-center font-bold text-lg">Projets</h1>
-          <div>
-            <Card className="p-5 grid">
-                <div className="border h-32 "></div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem et porro pariatur voluptas necessitatibus at quis ipsam eos saepe ratione eum ut debitis, tenetur soluta molestiae harum dolor excepturi. </div>
-            </Card>
-          </div>
+            <h1 className="my-9 text-center font-bold text-lg text-secondary">Projets</h1>
+                        
+            <ProjetsCard />
         </div> 
     </div>
 }

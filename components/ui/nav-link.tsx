@@ -14,8 +14,8 @@ export default function NavLinks (){
     const pathname = usePathname();
    return (
    
-   <div className="md:h-screen h-3 flex ">
-    <div className=" w-full flex flex-row md:flex-col gap-5 md:gap-4">
+   <div className="md:h-screen h-3 flex flex-col">
+    <div className=" w-full flex md:flex-col gap-5 md:gap-4">
     {links.map((link)=> {
         const linkIcon = link.icone;
         return (

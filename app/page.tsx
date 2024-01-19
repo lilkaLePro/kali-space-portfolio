@@ -45,13 +45,9 @@ export default async function Home() {
       <div className='text-md'>
           <div className='pb-1'>
           Ce site est faite en full code et est inspiré du site portfolio de Lee (fuction et ma source d information et d inspiration dans le devellopement Next.js).
-          Dans le projet jai utilisé d autres librairies :
+          Dans le projet jai utilisé d autres librairies : Tailwindcss , Shadcn ui , Lucide-react
           </div>
         <ul className='list-disc cursor-pointer' >
-          <li>Tailwindcss</li>
-          <li>Shadcn ui</li>
-          <li>Lucide-react </li>
-
           <li className='py-1'>
            <a className="pointer-events-none lg:pointer-events-auto "
               href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
