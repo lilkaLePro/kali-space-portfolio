@@ -3,7 +3,7 @@ import { ArrowUpRightIcon,
   GithubIcon, LinkedinIcon,  
   TwitterIcon } from 'lucide-react';
 
-const PresentationText = "Salut , je suis Klay Diallo. Developpeur Web front-end et Ui/Ux designer freelance. Passionné du code et du graphisme. Dans le code je suis plus sur du next , je travail maintenant avec next.js et Figma pour le Ui"
+const PresentationText = "Salut , je suis Kaly Diallo. Developpeur Web front-end et Ui/Ux designer freelance. Passionné du code et du graphisme. Dans le code je suis plus sur du next , je travail maintenant avec next.js et Figma pour le Ui"
 // const petit historique
 const lienReseau = [
   {name: 'Github' , icone: <GithubIcon />, href: "https://github.com/lilkaLePro" },
